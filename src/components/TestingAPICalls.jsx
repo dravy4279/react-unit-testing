@@ -11,8 +11,8 @@ const TestingAPICalls = () => {
 
   return (
     <div>
-      {data.map((item) => (
-        <div>{item.name}</div>
+      {data.map((item, index) => (
+        <div key={index}>{item.whatever}</div>
       ))}
     </div>
   );
