@@ -20,6 +20,7 @@ export default defineConfig([
     plugins: {
       react: reactPlugin,
       security: pluginSecurity,
+      'security/detect-eval-with-expression': 'error',
     },
     rules: {
       ...reactPlugin.configs.recommended.rules,
